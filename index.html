@@ -1,34 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Blog preview card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+
+    .component {
+      background-color: white;
+      width: 300px;
+      height: 200px;
+      margin-top: 80px;
+      padding-bottom: 250px;
+      border-radius: 10px;
+      border: 1px solid black;
+      box-shadow: 12px 12px black;
+    }
+
+    .img {
+      width: 100%;
+    }
+
+    .author {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .auth-img {
+      height: 30px;
+      width: 30px;
+    }
+
+    .Learning {
+      background-color: hsl(47, 88%, 63%);
+      width: 70px;
+      text-align: center;
+      border-radius: 3px;
+      padding: 3px;
+    }
+
+    a:hover {
+      color: hsl(47, 88%, 63%);
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    * {
+      font-family: "Figtree", sans-serif;
+    }
+
+    .Learning,
+    .p2d2,
+    .h-dtl-p {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .content {
+      padding: 15px;
+    }
   </style>
 </head>
+
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="component">
+    <div class="content">
+      <div class="img.dtl">
+        <!-- here will come image and its captions -->
+        <img src="./design/main-image.jpg" class="img" />
+        <p class="Learning">Learning</p>
+        <p class="p2d2">Published 21 Dec 2023</p>
+      </div>
+      <div class="heading-div">
+        <!-- here will come the heading "HTML and CSS foundations" -->
+        <h3 class="heading-div.h3"><a href="#">HTML & CSS foundations</a></h3>
+      </div>
+      <div class="h-dtl">
+        <!-- here will come the details associated with the above heading -->
+        <p class="h-dtl-p">These languages are the backbone of every website, defining structure, content
+          and presentation
+        </p>
+      </div>
+      <div class="author">
+        <!-- here will come the details of the author -->
+        <img src="./design/person.png" class="auth-img" />
+        <p class="auth-dtl">Greg Hooper</p>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
